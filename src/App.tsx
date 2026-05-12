@@ -2,7 +2,9 @@ import { useMemo, useState } from "react";
 import {
   Check,
   ChevronRight,
+  Heart,
   MessageCircle,
+  PawPrint,
   Search,
   SlidersHorizontal,
   Sparkles,
@@ -195,6 +197,8 @@ export function App() {
   }, [category, query]);
 
   const featuredProducts = products.filter((product) => product.featured);
+  const showcaseProducts = featuredProducts.length > 0 ? featuredProducts : products;
+  const heroProduct = showcaseProducts[0];
 
   function toggleSelected(productId: string) {
     setSelectedIds((current) =>
@@ -221,11 +225,73 @@ export function App() {
           </a>
         </header>
 
-        <div className="intro-copy">
-          <h2>Groomer-picked everyday essentials</h2>
-          <p>美容师给老客户精选的日常用品，适合洗护后直接查看、询价和预订。</p>
+        <div className="hero-grid">
+          <div className="intro-copy">
+            <h2>Shop groomer-picked pet essentials</h2>
+            <p>美容师给老客户精选的日常用品，打开就能看图、看价格、直接询价。</p>
+          </div>
+
+          <article className="showcase-card">
+            <button
+              className="showcase-image"
+              type="button"
+              onClick={() => setActiveProduct(heroProduct)}
+              aria-label={`View ${heroProduct.nameEn}`}
+            >
+              <img src={heroProduct.images[0]} alt={heroProduct.nameEn} />
+              <span>
+                <Heart size={15} />
+                Groomer favorite
+              </span>
+            </button>
+            <div className="showcase-copy">
+              <div>
+                <p>今日推荐</p>
+                <h2>{heroProduct.nameEn}</h2>
+                <small>{heroProduct.nameZh}</small>
+              </div>
+              <strong>{formatCad(heroProduct.priceCad)}</strong>
+            </div>
+            <div className="showcase-actions">
+              <button
+                className={`select-button ${selectedIds.includes(heroProduct.id) ? "is-selected" : ""}`}
+                type="button"
+                onClick={() => toggleSelected(heroProduct.id)}
+              >
+                {selectedIds.includes(heroProduct.id) ? (
+                  <Check size={16} />
+                ) : (
+                  <PawPrint size={16} />
+                )}
+                {selectedIds.includes(heroProduct.id)
+                  ? "Selected 已选"
+                  : "Add to ask 加入询价"}
+              </button>
+              <a className="primary-button" href={createWhatsAppUrl([heroProduct])}>
+                <MessageCircle size={17} />
+                Ask
+              </a>
+            </div>
+          </article>
         </div>
 
+        <div className="mini-product-rail" aria-label="Featured product shortcuts">
+          {showcaseProducts.map((product) => (
+            <button
+              className="mini-product-card"
+              type="button"
+              key={product.id}
+              onClick={() => setActiveProduct(product)}
+            >
+              <img src={product.images[0]} alt="" />
+              <span>{product.nameZh}</span>
+              <strong>{formatCad(product.priceCad)}</strong>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="browse-section" aria-label="Browse products">
         <div className="search-panel">
           <label className="search-box">
             <Search size={18} />

@@ -43,7 +43,7 @@ export const products: Product[] = [
     nameZh: "软针开结梳",
     category: "grooming",
     priceCad: 18.5,
-    images: ["/products/slicker-brush.jpg"],
+    images: ["/products/slicker-brush-use.jpg"],
     specs: {
       Material: "Stainless steel pins, beech handle",
       Size: "Small / Medium coats",
@@ -61,7 +61,7 @@ export const products: Product[] = [
     nameZh: "宠物速干毛巾",
     category: "grooming",
     priceCad: 16.9,
-    images: ["/products/quick-dry-towel.jpg"],
+    images: ["/products/quick-dry-towel-use.jpg"],
     specs: {
       Material: "Microfiber",
       Size: "70 x 100 cm",
@@ -79,7 +79,7 @@ export const products: Product[] = [
     nameZh: "硅胶喂食垫",
     category: "feeding",
     priceCad: 14.9,
-    images: ["/products/silicone-feeding-mat.jpg"],
+    images: ["/products/silicone-feeding-mat-use.jpg"],
     specs: {
       Material: "Food-grade silicone",
       Size: "48 x 30 cm",
@@ -97,7 +97,7 @@ export const products: Product[] = [
     nameZh: "慢食碗",
     category: "feeding",
     priceCad: 22,
-    images: ["/products/slow-feeder-bowl.jpg"],
+    images: ["/products/slow-feeder-bowl-use.jpg"],
     specs: {
       Material: "BPA-free plastic",
       Size: "2 cup capacity",
@@ -115,7 +115,7 @@ export const products: Product[] = [
     nameZh: "加厚拾便袋",
     category: "cleaning",
     priceCad: 12.9,
-    images: ["/products/poop-bag-rolls.jpg"],
+    images: ["/products/poop-bag-rolls-use.jpg"],
     specs: {
       Material: "Plant-based blend",
       Size: "15 rolls / 225 bags",
@@ -133,7 +133,7 @@ export const products: Product[] = [
     nameZh: "可调节舒适胸背",
     category: "walking",
     priceCad: 29,
-    images: ["/products/adjustable-harness.jpg"],
+    images: ["/products/adjustable-harness-use.jpg"],
     specs: {
       Material: "Nylon webbing, padded mesh",
       Size: "XS to L",
