@@ -43,9 +43,7 @@ export const products: Product[] = [
     nameZh: "软针开结梳",
     category: "grooming",
     priceCad: 18.5,
-    images: [
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/slicker-brush.jpg"],
     specs: {
       Material: "Stainless steel pins, beech handle",
       Size: "Small / Medium coats",
@@ -63,9 +61,7 @@ export const products: Product[] = [
     nameZh: "宠物速干毛巾",
     category: "grooming",
     priceCad: 16.9,
-    images: [
-      "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/quick-dry-towel.jpg"],
     specs: {
       Material: "Microfiber",
       Size: "70 x 100 cm",
@@ -83,9 +79,7 @@ export const products: Product[] = [
     nameZh: "硅胶喂食垫",
     category: "feeding",
     priceCad: 14.9,
-    images: [
-      "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/silicone-feeding-mat.jpg"],
     specs: {
       Material: "Food-grade silicone",
       Size: "48 x 30 cm",
@@ -103,9 +97,7 @@ export const products: Product[] = [
     nameZh: "慢食碗",
     category: "feeding",
     priceCad: 22,
-    images: [
-      "https://images.unsplash.com/photo-1600369672770-985fd30004eb?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/slow-feeder-bowl.jpg"],
     specs: {
       Material: "BPA-free plastic",
       Size: "2 cup capacity",
@@ -123,9 +115,7 @@ export const products: Product[] = [
     nameZh: "加厚拾便袋",
     category: "cleaning",
     priceCad: 12.9,
-    images: [
-      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/poop-bag-rolls.jpg"],
     specs: {
       Material: "Plant-based blend",
       Size: "15 rolls / 225 bags",
@@ -143,9 +133,7 @@ export const products: Product[] = [
     nameZh: "可调节舒适胸背",
     category: "walking",
     priceCad: 29,
-    images: [
-      "https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=900&q=85",
-    ],
+    images: ["/products/adjustable-harness.jpg"],
     specs: {
       Material: "Nylon webbing, padded mesh",
       Size: "XS to L",

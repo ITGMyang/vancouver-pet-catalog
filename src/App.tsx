@@ -222,8 +222,8 @@ export function App() {
         </header>
 
         <div className="intro-copy">
-          <h2>Groomer-selected pet products</h2>
-          <p>美容师精选用品，适合洗护后直接给客户查看、询价和预订。</p>
+          <h2>Groomer-picked everyday essentials</h2>
+          <p>美容师给老客户精选的日常用品，适合洗护后直接查看、询价和预订。</p>
         </div>
 
         <div className="search-panel">
@@ -268,7 +268,7 @@ export function App() {
         <div className="section-heading">
           <div>
             <h2 id="featured-title">Featured picks</h2>
-            <p>常被美容客户问到的实用单品</p>
+            <p>适合到店客户顺手加购的实用单品</p>
           </div>
           <span>{featuredProducts.length} items</span>
         </div>
@@ -292,7 +292,7 @@ export function App() {
         <div className="section-heading">
           <div>
             <h2 id="catalog-title">Product catalog</h2>
-            <p>产品图片、参数和价格</p>
+            <p>给宠物客户查看的图片、参数和价格</p>
           </div>
           <span>{filteredProducts.length} shown</span>
         </div>
