@@ -197,8 +197,8 @@ export function App() {
   }, [category, query]);
 
   const featuredProducts = products.filter((product) => product.featured);
-  const showcaseProducts = featuredProducts.length > 0 ? featuredProducts : products;
-  const heroProduct = showcaseProducts[0];
+  const showcaseProducts = products;
+  const heroProduct = featuredProducts[0] ?? products[0];
 
   function toggleSelected(productId: string) {
     setSelectedIds((current) =>
